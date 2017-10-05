@@ -1,0 +1,10 @@
+C:\Users\mmorales\Documents\Product_Verification\Jalapeno\trunk\Jalapeno\NUnitTests\bin\Debug\NUnitTests.dll
+C:\Users\mmorales\Documents\Product_Verification\Jalapeno\trunk\Jalapeno\NUnitTests\bin\Debug\NUnitTests.pdb
+C:\Users\mmorales\Documents\Product_Verification\Jalapeno\trunk\Jalapeno\NUnitTests\bin\Debug\nunit.framework.dll
+C:\Users\mmorales\Documents\Product_Verification\Jalapeno\trunk\Jalapeno\NUnitTests\bin\Debug\TG300SerialConnection.exe
+C:\Users\mmorales\Documents\Product_Verification\Jalapeno\trunk\Jalapeno\NUnitTests\bin\Debug\ZylSerialPort.dll
+C:\Users\mmorales\Documents\Product_Verification\Jalapeno\trunk\Jalapeno\NUnitTests\bin\Debug\TG300SerialConnection.pdb
+C:\Users\mmorales\Documents\Product_Verification\Jalapeno\trunk\Jalapeno\NUnitTests\bin\Debug\nunit.framework.xml
+C:\Users\mmorales\Documents\Product_Verification\Jalapeno\trunk\Jalapeno\NUnitTests\obj\Debug\NUnitTests.csprojResolveAssemblyReference.cache
+C:\Users\mmorales\Documents\Product_Verification\Jalapeno\trunk\Jalapeno\NUnitTests\obj\Debug\NUnitTests.dll
+C:\Users\mmorales\Documents\Product_Verification\Jalapeno\trunk\Jalapeno\NUnitTests\obj\Debug\NUnitTests.pdb

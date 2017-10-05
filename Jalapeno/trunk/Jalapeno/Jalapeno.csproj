@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{16EF5B95-C683-4D65-9A90-12D1739B54ED}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Jalapeno</RootNamespace>
+    <AssemblyName>TG300SerialConnection</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ZylSerialPort">
+      <HintPath>..\..\..\..\CovertTrackerSoftware\Dist\MiceTrap\ZylSerialPort.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Config\Cell.cs" />
+    <Compile Include="Config\FullConfiguration.cs" />
+    <Compile Include="Config\IOSettings.cs" />
+    <Compile Include="Config\Iridium.cs" />
+    <Compile Include="Config\Mode.cs" />
+    <Compile Include="Config\Geofence.cs" />
+    <Compile Include="Config\Notifications.cs" />
+    <Compile Include="Config\Timefence.cs" />
+    <Compile Include="DeviceStatus\FullDiagnostic.cs" />
+    <Compile Include="Messaging\Messages\ConfigurationWriter.cs" />
+    <Compile Include="Messaging\Messages\DiagnosticStatusMessage.cs" />
+    <Compile Include="Messaging\Messages\IDRequestMessage.cs" />
+    <Compile Include="Messaging\Messages\KeepAliveMessage.cs" />
+    <Compile Include="Messaging\Messages\Message.cs" />
+    <Compile Include="Utils\MessageEventArgs.cs" />
+    <Compile Include="Messaging\Messages\RealTimeTrackingMessage.cs" />
+    <Compile Include="Messaging\Messages\RequestPositionMessage.cs" />
+    <Compile Include="Messaging\Packetizer.cs" />
+    <Compile Include="Messaging\MessagePayloadData.cs" />
+    <Compile Include="Utils\EventDispatcher.cs" />
+    <Compile Include="Messaging\MessageHandler.cs" />
+    <Compile Include="Messaging\MessagePacketData.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="SerialLink.cs" />
+    <Compile Include="Session.cs" />
+    <Compile Include="Utils\MessageListener.cs" />
+    <Compile Include="Utils\Tools.cs" />
+    <Compile Include="Utils\UtilCRC.cs" />
+    <Compile Include="Utils\UtilEventDispatcher.cs" />
+    <Compile Include="Utils\UtilThread.cs" />
+    <Compile Include="Utils\UtilTimer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

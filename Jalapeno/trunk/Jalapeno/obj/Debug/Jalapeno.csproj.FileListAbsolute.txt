@@ -1,0 +1,5 @@
+C:\Users\mmorales\Documents\Product_Verification\Jalapeno\trunk\Jalapeno\bin\Debug\TG300SerialConnection.exe.config
+C:\Users\mmorales\Documents\Product_Verification\Jalapeno\trunk\Jalapeno\bin\Debug\TG300SerialConnection.exe
+C:\Users\mmorales\Documents\Product_Verification\Jalapeno\trunk\Jalapeno\bin\Debug\TG300SerialConnection.pdb
+C:\Users\mmorales\Documents\Product_Verification\Jalapeno\trunk\Jalapeno\obj\Debug\TG300SerialConnection.exe
+C:\Users\mmorales\Documents\Product_Verification\Jalapeno\trunk\Jalapeno\obj\Debug\TG300SerialConnection.pdb
